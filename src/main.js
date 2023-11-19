@@ -1,4 +1,7 @@
-import './assets/main.css'
+// import './assets/main.css'
+// import bootstrap
+// import "../node_modules/bootstrap-vue/dist/bootstrap-vue";
+import "bootstrap/dist/css/bootstrap.css";
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

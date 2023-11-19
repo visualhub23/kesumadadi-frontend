@@ -1,30 +1,34 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from "vue-router";
+import HelloWorld from "./components/HelloWorld.vue";
+import MyHeader from "./components/MyHeader.vue";
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <div id="app">
+    <div class="nav">
+      <MyHeader/>
     </div>
-  </header>
-
-  <RouterView />
+    
+  </div>
 </template>
 
-<style scoped>
+<style>
+/* import font */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Balinese&family=Poppins:wght@700&display=swap');
+
+
 header {
   line-height: 1.5;
   max-height: 100vh;
 }
+
+/* Dalam file CSS global atau di App.vue */
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
 
 .logo {
   display: block;
